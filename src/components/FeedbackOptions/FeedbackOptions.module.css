@@ -1,0 +1,20 @@
+.allButton {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  width: 90px;
+  font-size: 20px;
+  padding: 10px 10px;
+  margin: 10px;
+  font-weight: bold;
+  color: rgb(56, 73, 11);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
+  border: 1px solid #adabab;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgb(170, 241, 243);
+}
