@@ -1,15 +1,13 @@
 import s from './Notification.module.css';
-import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export default class Notification extends Component {
-  static defaultProps = {
-    message: '',
-  };
-  static propTypes = {
-    Message: PropTypes.string,
-  };
-  render() {
-    return <h2 className={s.notification}>{this.props.message}</h2>;
-  }
+export default function Notification({ message }) {
+  return <h2 className={s.notification}>{message}</h2>;
 }
+
+Notification.defaultProps = {
+  message: '',
+};
+Notification.propTypes = {
+  Message: PropTypes.string,
+};
