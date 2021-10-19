@@ -3,19 +3,19 @@ import PropTypes from 'prop-types';
 
 export default function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
-    <div className={s.allButton}>
+    <li className={s.allButton}>
       {options.map((option, ind) => (
         <button
           className={s.button}
           value={option}
           key={ind}
           type="button"
-          onClick={e => onLeaveFeedback(e)}
+          onClick={() => onLeaveFeedback(option)}
         >
           {option}
         </button>
       ))}
-    </div>
+    </li>
   );
 }
 
